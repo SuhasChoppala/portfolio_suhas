@@ -8,6 +8,26 @@
     .sidebar {
         background-color: rgb(23, 23, 23);
     }
+
+    .topBar {
+
+        /* backdrop-filter: blur(6px) saturate(95%);
+        -webkit-backdrop-filter: blur(6px) saturate(95%);
+        background-color: rgba(64, 64, 79, 0.11); */
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        border-radius: 14px;
+        width: 100%;
+        margin-top: 42px;
+        color: rgb(188, 188, 188);
+        animation: fade-in-down 1s forwards;
+        backdrop-filter: none;
+    }
+
+}
+
+
+.sidebar {
+    background-color: rgb(23, 23, 23);
 }
 
 @keyframes fade-in-down {
@@ -81,11 +101,10 @@
 
 body {
     background-image: url(../assets/4.jpg);
-    background-color: rgb(0, 0, 0);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 0px 400px;
+    padding: 0px 250px;
 }
 
 .topBar {
@@ -285,9 +304,14 @@ body {
     padding: 18px;
 }
 
+.expandedcrow {
+    margin-bottom: 25px;
+}
+
 .educationcard {
-    padding: 20px;
+    padding: 30px;
     animation: fade-in-up 3s forwards;
+    height: 328px;
 }
 
 .educationicon {
@@ -320,8 +344,14 @@ body {
 }
 
 .expcard {
-    padding: 15px;
+    padding: 27px;
     animation: fade-in-up 3s forwards;
+    height: 328px;
+
+}
+
+.exprows {
+    height: 250px;
 }
 
 .sliderlines {
@@ -333,9 +363,10 @@ body {
 }
 
 .foot-index {
-    margin-top: 22px;
+    /* margin-top: 22px; */
     padding: 17px 10px 7px 0px;
     animation: fade-in-up 4s forwards;
+    justify-content: last baseline;
 }
 
 .skills-heading {
@@ -383,7 +414,7 @@ body {
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     body {
         background-image: url(../assets/4.jpg);
         background-repeat: no-repeat;
@@ -398,9 +429,9 @@ body {
         margin-top: 0px;
         width: 100%;
     }
-}
+} */
 
-/* 
+
 /* Medium devices (tablets, 768px and up) */
 /* @media (min-width: 768px) {
     body {
@@ -435,25 +466,33 @@ body {
         margin-top: 0px;
         width: 100%;
     }
+
+    .expcard .educationcard {
+        padding: 400px;
+        height: 320px
+    }
 } */
 
 /* X-Large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
     body {
         background-image: url(../assets/4.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        padding: 20px;
+        padding: 0px 250px;
         align-items: center;
         justify-content: center;
     }
 
     .topBar {
-        margin-top: 0px;
         width: 100%;
     }
-} */
+
+    .expcard .educationcard {
+        padding: 50px;
+    }
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 /* @media (min-width: 1400px) {
