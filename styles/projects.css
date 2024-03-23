@@ -47,24 +47,34 @@
     }
 }
 
+body {
+    padding: 0px 250px;
+}
+
 
 .project-card1 {
     padding: 28px 20px;
     animation: fade-in-right 1s forwards;
+    height: 250px;
 }
 
 .project-card2 {
-    padding: 28px 20px 80px 20px;
+    padding: 28px 20px;
     animation: fade-in-left 1s forwards;
+    height: 250px;
 }
 
 .project-card3 {
-    padding: 28px 20px 100px 20px;
+    padding: 28px 20px;
     animation: fade-in-right 2s forwards;
+    height: 330px;
 }
 
 .project-card4 {
+    padding: 28px 20px;
     animation: fade-in-left 2s forwards;
+    height: 330px;
+
 }
 
 .footercard2 {
