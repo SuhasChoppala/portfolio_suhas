@@ -95,16 +95,18 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    padding: 0px 400px;
+    padding: 0px 250px;
 }
 
 .box-1 {
     animation: fade-in-right 1s forwards;
+    height: 380px;
 }
 
 .about-me-box {
-    padding: 30px 20px 40px 20px;
+    padding: 55px 20px 0px 20px;
     animation: fade-in-left 1s forwards;
+    height: 380px;
 }
 
 .about-me-box h2 {
