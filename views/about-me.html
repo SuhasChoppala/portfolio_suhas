@@ -13,33 +13,33 @@
     <link rel="stylesheet" href="../styles/about-me.css">
 </head>
 <body>
+
+
+
     <div class="container-fluid justify-content-center align-items-center banner ">
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark topBar">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand fs-6" href="../index.html">© Portfolio</a>
-                <!-- TOGGLE BTN-->
-                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- Sidebar -->
-                <div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <!-- Sidebar Header -->
-                    <div class="offcanvas-header text-white border-bottom">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">© Portfolio</h5>
-                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <!-- Sidebar Body -->
-                    <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-                        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
-                            <li class="nav-item mx-2 fs-6"><a class="nav-link" aria-current="page" href="../index.html">Home</a></li>
-                            <li class="nav-item mx-2 fs-6"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item mx-2 fs-6"><a class="nav-link" href="about-me.html">About Me</a></li>
-                        </ul>
-                        <!-- Contact Me -->
-                        <div class="d-flex justify-content-center align-items-center flex-column flex-lg-row"> 
-                            <a href="contact-me.html" class="text-decoration-none fs-6 contact-btn">Contact</a>
-                        </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-me.html">About</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="contact-me.html"><button class="btn btn-outline-secondary contact-btn" type="submit">Contact</button></a>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="edcbox">
+                <div class="edcbox  a-edc-rows">
                     <div class="row">
                         <div class="col-sm-4 side1">
                             <h6>Sree Kasyap Junior College</h6>
@@ -105,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="edcbox">
+                <div class="edcbox  a-edc-rows edcbox3">
                     <div class="row">
                         <div class="col-sm-4 side1">
                             <h6>Sri Chaitanya EM School</h6>
@@ -174,7 +174,7 @@
                     <h6 style="font-weight: 400; color: rgb(110, 110, 110);">Reach out and let's make it happen!</h6>
                     <a href="contact-me.html" id="fbtn">Get In Touch</a>
                 </div>
-                <div class="col-sm d-flex justify-content-end align-items-center">
+                <div class="col-sm d-flex justify-content-start justify-content-lg-end justify-content-md-end">
                     <div class="f-icons">
                         <a href="https://www.linkedin.com/in/choppala-suhas-9321b8218/" target="_blank"><i id="linkedin" class="fa-brands fa-linkedin-in aicons"></i></a>
                             <a href="https://github.com/SuhasChoppala" target="_blank"><i id="github" class="fa-brands fa-github aicons"></i></a>
