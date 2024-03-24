@@ -88,60 +88,168 @@ body {
     color: rgb(188, 188, 188);
 }
 
-/* @media (max-width: 1300px) {
-    body {
-        padding: 20px;
-        align-items: center;
-        justify-content: center;
-    }
 
-    .topBar {
-        margin-top: 0px;
-        width: 100%;
-    }
 
-    .side2 {
-        padding-left: 10px;
-    }
-} */
-
-/* X-Small devices (portrait phones, less than 576px) */
-/* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) {} */
-
-/* Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) {} */
-
-/* Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) {} */
-
-/* X-Large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) {
+@media (max-width: 767px) {
     body {
-        padding: 20px;
+        background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0));
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
         align-items: center;
         justify-content: center;
     }
 
-    .topBar {
-        margin-top: 0px;
+    .second-row {
+        flex-direction: row-reverse;
+    }
+
+    .project-card1 {
+        height: 330px;
+    }
+
+    .project-card2 {
+        height: 330px;
+        margin-top: 20px;
+    }
+
+    .project-card3 {
+        height: 470px;
+        margin-top: 20px;
+    }
+
+    .project-card4 {
+        height: 450px;
+        margin-top: 20px;
+    }
+
+    .f-icons-sec {
+        margin-top: 5px;
         width: 100%;
     }
+}
 
-    .side2 {
-        padding-left: 10px;
+
+@media (min-width: 279px) and (max-width: 282px) {
+    .project-card1 {
+        height: 500px;
     }
-} */
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-/* @media (min-width: 1400px) {
+    .project-card2 {
+        height: 500px;
+        margin-top: 20px;
+    }
+
+    .project-card3 {
+        height: 650px;
+        margin-top: 20px;
+    }
+
+    .project-card4 {
+        height: 650px;
+        margin-top: 20px;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
     body {
         background-image: url(../assets/4.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        padding: 30px 400px;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
     }
-} */
+
+    .project-card1 {
+        height: 330px;
+    }
+
+    .project-card2 {
+        height: 330px;
+    }
+
+    .project-card3 {
+        height: 420px;
+    }
+
+    .project-card4 {
+        height: 420px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background-image: url(../assets/4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 20px 20px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background-image: url(../assets/4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 20px 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topBar {
+        width: 100%;
+    }
+
+    .project-card1 {
+        height: 250px;
+    }
+
+    .project-card2 {
+        height: 250px;
+    }
+
+    .project-card3 {
+        height: 330px;
+    }
+
+    .project-card4 {
+        height: 330px;
+    }
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    body {
+        background-image: url(../assets/4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 20px 150px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topBar {
+        width: 100%;
+    }
+
+    .expcard .educationcard {
+        /* padding: 50px; */
+    }
+}
