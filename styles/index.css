@@ -5,7 +5,7 @@
 }
 
 @media (max-width: 991px) {
-    .sidebar {
+    .sidebarbody {
         background-color: rgb(23, 23, 23);
     }
 
@@ -104,18 +104,18 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 0px 250px;
+    /* padding: 0px 250px; */
 }
 
 .topBar {
 
-    backdrop-filter: blur(6px) saturate(95%);
-    -webkit-backdrop-filter: blur(6px) saturate(95%);
+    /* backdrop-filter: blur(6px) saturate(95%);
+    -webkit-backdrop-filter: blur(6px) saturate(95%); */
     background-color: rgba(64, 64, 79, 0.11);
     border: 1px solid rgba(255, 255, 255, 0.125);
     border-radius: 14px;
     width: 100%;
-    margin-top: 42px;
+    margin-top: 30px;
     color: rgb(188, 188, 188);
     animation: fade-in-down 1s forwards;
 }
@@ -161,19 +161,30 @@ body {
 
 
 .contact-btn {
-    color: #fff;
+    /* color: #fff;
     background-color: rgba(134, 122, 122, 0.2);
     padding: 10px 13px;
-    border-radius: 14px;
+    border-radius: 14px; */
     /* transition: all 0.1s ease; */
 }
 
 .contact-btn:hover {
     /* transform: scale(1.5); */
-    background-color: transparent;
+    /* background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2);
     font-weight: 500;
-    padding: 9px 13px;
+    padding: 9px 13px; */
+}
+
+.contact-btn {
+    color: #fff;
+    background-color: rgba(134, 122, 122, 0.2);
+    border: none;
+}
+
+.contact-btn:hover {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .second-row {
@@ -305,13 +316,11 @@ body {
 }
 
 .expandedcrow {
-    margin-bottom: 25px;
+    margin-bottom: 16px;
 }
 
 .educationcard {
-    padding: 30px;
     animation: fade-in-up 3s forwards;
-    height: 328px;
 }
 
 .educationicon {
@@ -328,8 +337,6 @@ body {
 
 .edrows {
     margin-top: 10px;
-    /* padding: 4px; */
-    /* border: 1px solid rgba(43, 42, 42, 0.7); */
 }
 
 .edcards {
@@ -344,9 +351,7 @@ body {
 }
 
 .expcard {
-    padding: 27px;
     animation: fade-in-up 3s forwards;
-    height: 328px;
 
 }
 
@@ -355,6 +360,9 @@ body {
 }
 
 .sliderlines {
+    /* margin: auto; */
+    position: relative;
+    /* margin-top: 8px; */
     margin: auto;
 }
 
@@ -413,14 +421,17 @@ body {
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
+
+
+
 /* Small devices (landscape phones, 576px and up) */
-/* @media (max-width: 576px) {
+@media (max-width: 767px) {
     body {
-        background-image: url(../assets/4.jpg);
+        background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0));
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        padding: 20px;
+        padding: 15px 10px 10px 10px;
         align-items: center;
         justify-content: center;
     }
@@ -429,35 +440,98 @@ body {
         margin-top: 0px;
         width: 100%;
     }
-} */
 
-
-/* Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) {
-    body {
-        background-image: url(../assets/4.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: 20px;
-        align-items: center;
-        justify-content: center;
+    .second-row {
+        flex-direction: column-reverse;
+        margin-top: 15px;
     }
 
-    .topBar {
-        margin-top: 0px;
+    .infobox {
+        margin-top: 20px;
+    }
+
+    .pheader {
+        display: flex;
         width: 100%;
+        flex-direction: row;
+    }
+
+    .pheader-text {
+        width: 50%;
+    }
+
+    .pbutton {
+        width: 50%;
+        text-align: right;
+        justify-content: flex-end;
+        margin-right: 0px;
+    }
+
+    .prows {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .p-iconsec {
+        width: 20%;
+    }
+
+    .p-namesec {
+        width: 80%;
+    }
+
+    .picons {
+        width: 50px;
+    }
+
+    .educationcard {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .expcard {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .skills-row {
+        padding: 10px;
+    }
+
+
+}
+
+/* This is only for the Glalaxy fold mobile which has 280px  */
+@media (min-width: 279px) and (max-width: 282px) {
+
+    .pheader-text h5 {
+        font-size: 17px;
+    }
+
+    #viewall-btn {
+        padding: 3px 3px;
+    }
+
+    .prows a {
+        font-size: medium;
+    }
+
+    .picons {
+        width: 2px;
+        justify-content: start;
     }
 }
 
-/* Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) {
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
     body {
         background-image: url(../assets/4.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        padding: 200px 20px;
+        padding: 20px;
         align-items: center;
         justify-content: center;
     }
@@ -467,11 +541,120 @@ body {
         width: 100%;
     }
 
-    .expcard .educationcard {
-        padding: 400px;
-        height: 320px
+    .pcard1 {
+        height: 530px;
     }
-} */
+
+    .pheader h5 {
+        font-size: larger;
+    }
+
+    #viewall-btn {
+        color: rgb(188, 188, 188);
+        background-color: rgba(134, 122, 122, 0.2);
+        padding: 2px 8px;
+        border-radius: 8px;
+    }
+
+    #viewall-btn:hover {
+        background-color: transparent;
+        padding: 2px 8px;
+        border: 0px solid rgba(255, 255, 255, 0.125);
+    }
+
+    .pbutton {
+        text-align: center;
+    }
+
+    .picons {
+        background-color: rgba(43, 42, 42, 0.4);
+        padding: 8px;
+        border-radius: 14px;
+    }
+
+    .prows a {
+        text-decoration: none;
+        font-size: 14px;
+        color: rgb(188, 188, 188);
+    }
+
+    .prows {
+        margin-top: 40px;
+        padding: 12px 10px 12px 10px;
+        border: 1px solid rgba(43, 42, 42, 0.5);
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .educationcard {
+        height: 450px;
+        padding: 10px;
+    }
+
+    .edrows {
+        margin-top: 2px;
+    }
+
+    .expcard {
+        height: 450px;
+        padding: 10px;
+    }
+
+    .sidebar {
+        background-color: black;
+    }
+
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background-image: url(../assets/4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topBar {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .expcard {
+        height: 340px;
+        padding: 20px 10px 0px 10px;
+    }
+
+    .educationcard {
+        height: 340px;
+        padding: 20px 10px 0px 10px;
+    }
+
+    .expandedcrow {
+        padding-bottom: 8px;
+    }
+
+    .pcard1 {
+        height: 430px;
+    }
+
+    .prows {
+        margin-top: 30px;
+        padding: 12px 10px 12px 10px;
+        border: 1px solid rgba(43, 42, 42, 0.5);
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .pbutton {
+        text-align: right;
+    }
+
+}
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -480,7 +663,7 @@ body {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        padding: 0px 250px;
+        padding: 20px 100px;
         align-items: center;
         justify-content: center;
     }
@@ -489,23 +672,54 @@ body {
         width: 100%;
     }
 
-    .expcard .educationcard {
-        padding: 50px;
+    .expcard {
+        height: 340px;
+        padding: 20px 10px 0px 10px;
+    }
+
+    .educationcard {
+        height: 340px;
+        padding: 20px 10px 0px 10px;
+    }
+
+    .prows {
+        margin-top: 14px;
+        padding: 12px 10px 12px 10px;
+        border: 1px solid rgba(43, 42, 42, 0.5);
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .prows a {
+        text-decoration: none;
+        font-size: 17px;
+        color: rgb(188, 188, 188);
+    }
+
+    .picons {
+        background-color: rgba(43, 42, 42, 0.4);
+        padding: 16px;
+        border-radius: 14px;
     }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-/* @media (min-width: 1400px) {
+@media (min-width: 1400px) {
     body {
         background-image: url(../assets/4.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        padding: 50px 400px;
+        padding: 20px 150px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .edrows {
+        margin-top: 15px;
     }
 
     .topBar {
-        margin-top: 0px;
         width: 100%;
     }
-} */
+}
