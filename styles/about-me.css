@@ -95,7 +95,6 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    padding: 0px 250px;
 }
 
 .box-1 {
@@ -104,7 +103,6 @@ body {
 }
 
 .about-me-box {
-    padding: 55px 20px 0px 20px;
     animation: fade-in-left 1s forwards;
     height: 380px;
 }
@@ -166,6 +164,8 @@ body {
 .about-icons a {
     text-decoration: none;
     color: rgb(188, 188, 188);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 5px;
 }
 
 .about-icons {
@@ -241,9 +241,14 @@ body {
 }
 
 .tside2 img {
+    /* width: auto; */
+    width: 210px;
+    border-radius: 14px;
+}
+
+.tside2 {
     align-items: flex-end;
     justify-content: flex-end;
-    border-radius: 14px;
 }
 
 .footercard {
@@ -290,61 +295,174 @@ body {
     margin-left: 8px;
 }
 
-/* 
-@media (max-width: 1300px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
     body {
-        padding: 20px;
-        align-items: center;
-        justify-content: center;
+        background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0));
     }
 
-    .topBar {
-        margin-top: 0px;
-        width: 100%;
+    .second-row {
+        flex-direction: row-reverse;
+    }
+
+    .about-me-box {
+        margin-top: 20px;
+        height: 430px;
+        padding: 10px;
+        padding-top: 15px;
+    }
+
+    .side1 {
+        border-right: none;
     }
 
     .side2 {
         padding-left: 10px;
     }
-} */
 
-/* X-Small devices (portrait phones, less than 576px) */
-/* No media query for `xs` since this is the default in Bootstrap */
+    .edcbox {
+        border-bottom: 1px solid rgba(43, 42, 42, 0.9);
+    }
 
-/* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) {} */
+    .a-edc-rows {
+        padding-top: 10px;
+    }
+
+    .edcbox3 {
+        border-bottom: none;
+    }
+
+    .f-icons {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 279px) and (max-width: 282px) {
+    .about-me-box {
+        margin-top: 50px;
+        height: 550px;
+    }
+
+    .aicons {
+        font-size: 14px;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) {} */
+@media (min-width: 768px) {
+    .about-me-box {
+        padding: 10px;
+    }
+
+    .about-me-box p {
+        font-size: 15px;
+    }
+
+    #resume {
+        margin-top: 10px;
+    }
+
+    .tside2 img {
+        width: 150px;
+    }
+}
+
 
 /* Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) {} */
-
-/* X-Large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) {
-    body {
-        padding: 20px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .topBar {
-        margin-top: 0px;
-        width: 100%;
-    }
-
-    .side2 {
-        padding-left: 10px;
-    }
-} */
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-/* @media (min-width: 1400px) {
+@media (min-width: 992px) {
     body {
         background-image: url(../assets/4.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        padding: 42px 400px;
+        padding: 20px 20px;
+        align-items: center;
+        justify-content: center;
     }
-} */
+
+    .about-me-box {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .about-me-box p {
+        text-align: justify;
+    }
+
+
+    #resume {
+        margin-top: 10px;
+    }
+
+    .tside2 img {
+        width: 210px;
+    }
+}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background-image: url(../assets/4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 0px 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topBar {
+        width: 100%;
+    }
+
+    .about-me-box {
+        padding: 20px 20px 22px 20px;
+        justify-content: baseline;
+        align-items: baseline;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    body {
+        background-image: url(../assets/4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 20px 150px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topBar {
+        width: 100%;
+    }
+
+    .expcard .educationcard {
+        /* padding: 50px; */
+    }
+
+    .about-me-box {
+        justify-content: center;
+    }
+
+    .about-me-box h2 {
+        /* background: linear-gradient(to left, rgb(183, 37, 40), rgb(65, 57, 235)); */
+        background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    #about-me-box-h2 {
+        background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .tside2 img {
+        position: relative;
+        margin-left: 50px;
+        width: 190px;
+    }
+}
