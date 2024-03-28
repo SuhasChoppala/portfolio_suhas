@@ -91,8 +91,9 @@ body {
 
 
 
+
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 767px) {
+@media (max-width: 575px) {
     body {
         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0));
         background-repeat: no-repeat;
@@ -132,7 +133,7 @@ body {
     }
 }
 
-
+/* This is only for the Glalaxy fold mobile which has 280px  */
 @media (min-width: 279px) and (max-width: 282px) {
     .project-card1 {
         height: 500px;
@@ -154,6 +155,30 @@ body {
     }
 
 }
+
+/* for tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0));
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-card2,
+    .project-card4 {
+        margin-top: 20px;
+    }
+}
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
