@@ -4,12 +4,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-@media (max-width: 991px) {
-    .sidebar {
-        background-color: rgb(23, 23, 23);
-    }
-}
-
 .contact-card {
     padding: 26px 12px;
 }
