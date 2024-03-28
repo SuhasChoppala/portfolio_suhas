@@ -4,31 +4,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-@media (max-width: 991px) {
-    .sidebarbody {
-        background-color: rgb(23, 23, 23);
-    }
-
-    .topBar {
-
-        /* backdrop-filter: blur(6px) saturate(95%);
-        -webkit-backdrop-filter: blur(6px) saturate(95%);
-        background-color: rgba(64, 64, 79, 0.11); */
-        border: 1px solid rgba(255, 255, 255, 0.125);
-        border-radius: 14px;
-        width: 100%;
-        margin-top: 42px;
-        color: rgb(188, 188, 188);
-        animation: fade-in-down 1s forwards;
-        backdrop-filter: none;
-    }
-
-}
-
-
-.sidebar {
-    background-color: rgb(23, 23, 23);
-}
 
 @keyframes fade-in-down {
     from {
@@ -104,8 +79,15 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* padding: 0px 250px; */
 }
+
+
+.p-heading {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.125);
+    width: 160px;
+    line-height: 30px;
+}
+
 
 .topBar {
 
@@ -159,22 +141,6 @@ body {
     transform: scale(1.07);
 }
 
-
-.contact-btn {
-    /* color: #fff;
-    background-color: rgba(134, 122, 122, 0.2);
-    padding: 10px 13px;
-    border-radius: 14px; */
-    /* transition: all 0.1s ease; */
-}
-
-.contact-btn:hover {
-    /* transform: scale(1.5); */
-    /* background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    font-weight: 500;
-    padding: 9px 13px; */
-}
 
 .contact-btn {
     color: #fff;
@@ -418,14 +384,11 @@ body {
     }
 }
 
-/* X-Small devices (portrait phones, less than 576px) */
-/* No media query for `xs` since this is the default in Bootstrap */
-
 
 
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 767px) {
+@media (max-width: 575px) {
     body {
         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0));
         background-repeat: no-repeat;
@@ -502,6 +465,8 @@ body {
 
 }
 
+
+
 /* This is only for the Glalaxy fold mobile which has 280px  */
 @media (min-width: 279px) and (max-width: 282px) {
 
@@ -523,6 +488,76 @@ body {
     }
 }
 
+/* for tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0));
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topBar {
+        margin-top: 10px;
+    }
+
+    .second-row .col-sm-6 {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .second-row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .third-row {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .third-row .col-sm-8 {
+        width: 100%;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-right: 0px
+    }
+
+    .expandedcrow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .third-row .expandedcrow .col-sm {
+        margin-top: 20px;
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .expcard {
+        width: 100%;
+        margin-right: 0px;
+        padding: 10px;
+    }
+
+    .educationcard {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .foot-index {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
