@@ -108,7 +108,6 @@ body {
 }
 
 .about-me-box h2 {
-    /* background: linear-gradient(to left, rgb(183, 37, 40), rgb(65, 57, 235)); */
     background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -164,7 +163,6 @@ body {
 .about-icons a {
     text-decoration: none;
     color: rgb(188, 188, 188);
-    border: 1px solid rgba(255, 255, 255, 0.125);
     border-radius: 5px;
 }
 
@@ -175,9 +173,8 @@ body {
 .aicons {
     font-size: 20px;
     padding: 11px;
-    border: 1px solid rgb(40, 40, 40);
+    border: 1px solid rgba(255, 255, 255, 0.125);
     border-radius: 5px;
-    /* margin-right: 18px; */
 }
 
 .aeduc-box {
@@ -295,8 +292,13 @@ body {
     margin-left: 8px;
 }
 
+
+
+
+
+
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 767px) {
+@media (max-width: 575px) {
     body {
         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0));
     }
@@ -337,6 +339,7 @@ body {
     }
 }
 
+/* This is only for the Glalaxy fold mobile which has 280px  */
 @media (min-width: 279px) and (max-width: 282px) {
     .about-me-box {
         margin-top: 50px;
@@ -347,6 +350,53 @@ body {
         font-size: 14px;
     }
 }
+
+
+
+
+/* for tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0));
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-box {
+        padding: 0px 15px 0px 15px;
+        height: 300px;
+    }
+
+    .box-1 {
+        height: 330px;
+        margin-bottom: 20px;
+    }
+
+    #about-me-box-h2 {
+        background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .train-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tside1 {
+        width: 100%;
+    }
+}
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -407,7 +457,7 @@ body {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        padding: 20px 100px;
+        padding: 0px 100px;
         align-items: center;
         justify-content: center;
     }
