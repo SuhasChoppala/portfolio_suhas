@@ -319,7 +319,9 @@ body {
     }
 
     .edcbox {
-        border-bottom: 1px solid rgba(43, 42, 42, 0.9);
+/*         border-bottom: 1px solid rgba(43, 42, 42, 0.9); */
+        border-bottom: 1px solid rgba(78, 76, 76, 0.9);
+
     }
 
     .a-edc-rows {
