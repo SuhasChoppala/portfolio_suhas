@@ -295,7 +295,8 @@ body {
 @media (max-width: 575px) {
     body {
 /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
-        background: linear-gradient(to bottom, #780206, #030a3d);
+/*         background: linear-gradient(to bottom, #780206, #030a3d); */
+        background: linear-gradient(to bottom, #7a2828, #00223E);
     }
 
     .second-row {
@@ -353,7 +354,8 @@ body {
 @media (min-width: 576px) and (max-width: 767px) {
     body {
 /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
-        background: linear-gradient(to bottom, #780206, #030a3d);
+/*         background: linear-gradient(to bottom, #780206, #030a3d); */
+        background: linear-gradient(to bottom, #7a2828, #00223E);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
