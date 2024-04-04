@@ -97,53 +97,16 @@
     padding-top: 14px;
 }
 
-/* @media (max-width: 1300px) {
-    body {
-        padding: 20px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .topBar {
-        margin-top: 0px;
-        width: 100%;
-    }
-
-    .side2 {
-        padding-left: 10px;
-    }
-
-    .firstrow {
-        padding: 10px;
-    }
-
-    .secondrow {
-        padding: 0px 10px 10px 10px;
-    }
-
-    .thirdrow {
-        padding: 10px;
-    }
-
-    .send-btn {
-        padding: 0px 20px;
-    }
-} */
-
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
 
-@media (min-width: 279px) and (max-width: 282px) {
-    .cicons {
-        font-size: 14px;
-    }
-}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767px) {
     body {
-        background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0));
+/*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
+        background: linear-gradient(to bottom, #780206, #030a3d);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -169,6 +132,13 @@
         margin-bottom: 30px;
     }
 }
+
+@media (min-width: 279px) and (max-width: 282px) {
+    .cicons {
+        font-size: 14px;
+    }
+}
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
