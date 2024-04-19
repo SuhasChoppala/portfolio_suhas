@@ -296,7 +296,8 @@ body {
     body {
 /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
 /*         background: linear-gradient(to bottom, #780206, #030a3d); */
-        background: linear-gradient(to bottom, #7a2828, #00223E);
+/*         background: linear-gradient(to bottom, #7a2828, #00223E); */
+        background: linear-gradient(to bottom, #870000, #00223E, #010201);
     }
 
     .second-row {
@@ -357,7 +358,8 @@ body {
     body {
 /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
 /*         background: linear-gradient(to bottom, #780206, #030a3d); */
-        background: linear-gradient(to bottom, #7a2828, #00223E);
+/*         background: linear-gradient(to bottom, #7a2828, #00223E); */
+        background: linear-gradient(to bottom, #870000, #00223E, #010201);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
