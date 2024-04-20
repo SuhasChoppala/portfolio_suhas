@@ -420,6 +420,7 @@ body {
         display: flex;
         width: 100%;
         flex-direction: row;
+        padding: 0px;
     }
 
     .pheader-text {
@@ -433,10 +434,18 @@ body {
         margin-right: 0px;
     }
 
+    #viewall-btn {
+        text-align: right;
+        margin-right: 0px;
+        position: relative;
+        margin-right: -8px;
+    }
+
     .prows {
         width: 100%;
         display: flex;
         flex-direction: row;
+        border: 1px solid rgba(87, 80, 80, 0.2);
     }
 
     .p-iconsec {
@@ -445,10 +454,18 @@ body {
 
     .p-namesec {
         width: 80%;
+        padding-left: 22px;
     }
+
+
+    .pcard1 {
+        padding: 20px 0px 10px 20px;
+    }
+
 
     .picons {
         width: 50px;
+        background-color: rgba(87, 80, 80, 0.2);
     }
 
     .educationcard {
@@ -506,7 +523,8 @@ body {
         justify-content: center;
     }
 
-    .topBar {
+    
+.topBar {
         margin-top: 10px;
     }
 
@@ -525,6 +543,14 @@ body {
         display: flex;
         flex-direction: column;
         margin-top: 0px;
+    }
+
+    .prows {
+        border: 1px solid rgba(87, 80, 80, 0.2);
+    }
+
+    .picons {
+        background-color: rgba(87, 80, 80, 0.2);
     }
 
     .third-row .col-sm-8 {
@@ -562,7 +588,6 @@ body {
         width: 100%;
         margin-right: 0px;
     }
-
 }
 
 /* Medium devices (tablets, 768px and up) */
