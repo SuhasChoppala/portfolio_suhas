@@ -248,6 +248,7 @@ body {
     padding: 10px;
 }
 
+
 .pbutton {
     text-align: right;
 }
@@ -390,9 +391,8 @@ body {
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575px) {
     body {
-/*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
-/*         background: linear-gradient(to bottom, #780206, #030a3d); */
-/*         background: linear-gradient(to bottom, #7a2828, #00223E); */
+        /* background: linear-gradient(to bottom, #780206, #030a3d); */
+        /* background: linear-gradient(to bottom, #7a2828, #00223E); */
         background: linear-gradient(to bottom, #870000, #00223E, #010201);
         background-repeat: no-repeat;
         background-position: center;
@@ -511,9 +511,8 @@ body {
 /* for tablets */
 @media (min-width: 576px) and (max-width: 767px) {
     body {
-/*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
-/*         background: linear-gradient(to bottom, #780206, #030a3d); */
-/*         background: linear-gradient(to bottom, #7a2828, #00223E); */
+        /* background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
+        /* background: linear-gradient(to bottom, #780206, #030a3d); */
         background: linear-gradient(to bottom, #870000, #00223E, #010201);
         background-repeat: no-repeat;
         background-position: center;
@@ -523,8 +522,7 @@ body {
         justify-content: center;
     }
 
-    
-.topBar {
+    .topBar {
         margin-top: 10px;
     }
 
@@ -588,6 +586,7 @@ body {
         width: 100%;
         margin-right: 0px;
     }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
