@@ -105,15 +105,9 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767px) {
     body {
-<<<<<<< HEAD
         /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
         /*         background: linear-gradient(to bottom, #780206, #030a3d); */
         /*         background: linear-gradient(to bottom, #7a2828, #00223E); */
-=======
-/*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
-/*         background: linear-gradient(to bottom, #780206, #030a3d); */
-/*         background: linear-gradient(to bottom, #7a2828, #00223E); */
->>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
         background: linear-gradient(to bottom, #870000, #00223E, #010201);
         background-repeat: no-repeat;
         background-position: center;
@@ -179,58 +173,6 @@
         padding: 10px 20px;
         align-items: center;
         justify-content: center;
-<<<<<<< HEAD
-    }
-
-    .firstrow {
-        padding: 12px 100px 0px 100px;
-    }
-
-    .secondrow {
-        padding: 0px 100px;
-    }
-
-    .thirdrow {
-        padding: 28px 100px;
-    }
-
-    .send-btn {
-        padding: 0px 100px;
-        margin-bottom: 30px;
-    }
-
-}
-
-@media (min-width: 1200px) {
-    body {
-        background-image: url(../assets/4.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: 20px 150px;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-@media (min-width: 1400px) {
-    .firstrow {
-        padding: 12px 300px 0px 300px;
-    }
-
-    .secondrow {
-        padding: 0px 300px;
-    }
-
-    .thirdrow {
-        padding: 28px 300px;
-    }
-
-    .send-btn {
-        padding: 0px 300px;
-        margin-bottom: 30px;
-=======
->>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
     }
 
     .firstrow {

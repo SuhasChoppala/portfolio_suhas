@@ -248,7 +248,6 @@ body {
     padding: 10px;
 }
 
-
 .pbutton {
     text-align: right;
 }
@@ -338,10 +337,7 @@ body {
 }
 
 .foot-index {
-<<<<<<< HEAD
-=======
     /* margin-top: 22px; */
->>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
     padding: 17px 10px 7px 0px;
     animation: fade-in-up 4s forwards;
     justify-content: last baseline;
@@ -352,47 +348,44 @@ body {
     font-size: 23px;
 }
 
-.skills-sec {
+.skill-main {
     overflow: hidden;
+}
+
+.slide-skills {
+    animation: scroll 20s linear infinite;
+    /* animation-name: loop; */
+    /* animation-timing-function: linear;
+    animation-iteration-count: infinite; */
     white-space: nowrap;
-}
-
-.scroll-container {
-    display: inline-block;
-    animation: scroll 10s linear infinite;
-}
-
-.scroll-text {
     display: flex;
-    gap: 40px
+    gap: 10px;
+    color: rgb(188, 188, 188);
+    vertical-align: auto;
+    padding-right: 20px;
 }
 
-.scroll-text h6 {
-    font-weight: 400;
+.slide-skills h6 {
+    /* display: inline-block; */
+    padding: 3px 15px 0px 15px;
+    font-weight: 300;
     color: rgb(110, 110, 110);
-}
-
-.scroll-container:hover {
-    animation-play-state: paused;
-    /* Pause on hover */
 }
 
 @keyframes scroll {
     0% {
-        transform: translateX(60%);
+        transform: translateX(0%);
+        /* Start scrolling from the right edge */
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-80.9%);
+        /* Scroll to the left edge */
     }
 }
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575px) {
@@ -413,24 +406,6 @@ body {
         width: 100%;
     }
 
-<<<<<<< HEAD
-    .scroll-text {
-        display: flex;
-        gap: 35px
-    }
-
-    @keyframes scroll {
-        0% {
-            transform: translateX(30%);
-        }
-
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-
-=======
->>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
     .second-row {
         flex-direction: column-reverse;
         margin-top: 15px;
@@ -506,13 +481,6 @@ body {
         padding: 10px;
     }
 
-<<<<<<< HEAD
-    .skills-sec {
-        margin-top: 10px;
-    }
-
-=======
->>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
 
 }
 
@@ -617,7 +585,6 @@ body {
         width: 100%;
         margin-right: 0px;
     }
-
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -818,8 +785,4 @@ body {
     .topBar {
         width: 100%;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8

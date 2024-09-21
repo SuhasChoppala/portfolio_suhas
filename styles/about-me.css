@@ -182,11 +182,7 @@ body {
 }
 
 .side1 {
-<<<<<<< HEAD
     border-right: 1px solid rgba(78, 76, 76, 0.9);
-=======
-        border-right: 1px solid rgba(78, 76, 76, 0.9);
->>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
 }
 
 .side2 {
@@ -298,15 +294,9 @@ body {
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575px) {
     body {
-<<<<<<< HEAD
         /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
         /*         background: linear-gradient(to bottom, #780206, #030a3d); */
         /*         background: linear-gradient(to bottom, #7a2828, #00223E); */
-=======
-/*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
-/*         background: linear-gradient(to bottom, #780206, #030a3d); */
-/*         background: linear-gradient(to bottom, #7a2828, #00223E); */
->>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
         background: linear-gradient(to bottom, #870000, #00223E, #010201);
     }
 
@@ -330,11 +320,7 @@ body {
     }
 
     .edcbox {
-<<<<<<< HEAD
         /*         border-bottom: 1px solid rgba(43, 42, 42, 0.9); */
-=======
-/*         border-bottom: 1px solid rgba(43, 42, 42, 0.9); */
->>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
         border-bottom: 1px solid rgba(78, 76, 76, 0.9);
 
     }
@@ -370,15 +356,9 @@ body {
 /* for tablets */
 @media (min-width: 576px) and (max-width: 767px) {
     body {
-<<<<<<< HEAD
         /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
         /*         background: linear-gradient(to bottom, #780206, #030a3d); */
         /*         background: linear-gradient(to bottom, #7a2828, #00223E); */
-=======
-/*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
-/*         background: linear-gradient(to bottom, #780206, #030a3d); */
-/*         background: linear-gradient(to bottom, #7a2828, #00223E); */
->>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
         background: linear-gradient(to bottom, #870000, #00223E, #010201);
         background-repeat: no-repeat;
         background-position: center;
@@ -537,8 +517,4 @@ body {
         margin-left: 50px;
         width: 190px;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
