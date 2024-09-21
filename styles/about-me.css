@@ -4,12 +4,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-@media (max-width: 991px) {
-    .sidebar {
-        background-color: rgb(23, 23, 23);
-    }
-}
-
 @keyframes fade-in-up {
     from {
         opacity: 0;
@@ -95,20 +89,19 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    padding: 0px 400px;
 }
 
 .box-1 {
     animation: fade-in-right 1s forwards;
+    height: 380px;
 }
 
 .about-me-box {
-    padding: 30px 20px 40px 20px;
     animation: fade-in-left 1s forwards;
+    height: 380px;
 }
 
 .about-me-box h2 {
-    /* background: linear-gradient(to left, rgb(183, 37, 40), rgb(65, 57, 235)); */
     background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -164,6 +157,7 @@ body {
 .about-icons a {
     text-decoration: none;
     color: rgb(188, 188, 188);
+    border-radius: 5px;
 }
 
 .about-icons {
@@ -173,9 +167,8 @@ body {
 .aicons {
     font-size: 20px;
     padding: 11px;
-    border: 1px solid rgb(40, 40, 40);
+    border: 1px solid rgba(255, 255, 255, 0.125);
     border-radius: 5px;
-    /* margin-right: 18px; */
 }
 
 .aeduc-box {
@@ -189,7 +182,7 @@ body {
 }
 
 .side1 {
-    border-right: 1px solid rgba(43, 42, 42, 0.9);
+    border-right: 1px solid rgba(78, 76, 76, 0.9);
 }
 
 .side2 {
@@ -239,9 +232,14 @@ body {
 }
 
 .tside2 img {
+    /* width: auto; */
+    width: 210px;
+    border-radius: 14px;
+}
+
+.tside2 {
     align-items: flex-end;
     justify-content: flex-end;
-    border-radius: 14px;
 }
 
 .footercard {
@@ -288,61 +286,235 @@ body {
     margin-left: 8px;
 }
 
-/* 
-@media (max-width: 1300px) {
-    body {
-        padding: 20px;
-        align-items: center;
-        justify-content: center;
-    }
 
-    .topBar {
-        margin-top: 0px;
-        width: 100%;
-    }
 
-    .side2 {
-        padding-left: 10px;
-    }
-} */
 
-/* X-Small devices (portrait phones, less than 576px) */
-/* No media query for `xs` since this is the default in Bootstrap */
+
 
 /* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) {} */
-
-/* Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) {} */
-
-/* Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) {} */
-
-/* X-Large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) {
+@media (max-width: 575px) {
     body {
-        padding: 20px;
-        align-items: center;
-        justify-content: center;
+        /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
+        /*         background: linear-gradient(to bottom, #780206, #030a3d); */
+        /*         background: linear-gradient(to bottom, #7a2828, #00223E); */
+        background: linear-gradient(to bottom, #870000, #00223E, #010201);
     }
 
-    .topBar {
-        margin-top: 0px;
-        width: 100%;
+    .second-row {
+        flex-direction: row-reverse;
+    }
+
+    .about-me-box {
+        margin-top: 20px;
+        height: 430px;
+        padding: 10px;
+        padding-top: 15px;
+    }
+
+    .side1 {
+        border-right: none;
     }
 
     .side2 {
         padding-left: 10px;
     }
-} */
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-/* @media (min-width: 1400px) {
+    .edcbox {
+        /*         border-bottom: 1px solid rgba(43, 42, 42, 0.9); */
+        border-bottom: 1px solid rgba(78, 76, 76, 0.9);
+
+    }
+
+    .a-edc-rows {
+        padding-top: 10px;
+    }
+
+    .edcbox3 {
+        border-bottom: none;
+    }
+
+    .f-icons {
+        margin-top: 20px;
+    }
+}
+
+/* This is only for the Glalaxy fold mobile which has 280px  */
+@media (min-width: 279px) and (max-width: 282px) {
+    .about-me-box {
+        margin-top: 50px;
+        height: 550px;
+    }
+
+    .aicons {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* for tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
+        /*         background: linear-gradient(to bottom, #780206, #030a3d); */
+        /*         background: linear-gradient(to bottom, #7a2828, #00223E); */
+        background: linear-gradient(to bottom, #870000, #00223E, #010201);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-box {
+        padding: 0px 15px 0px 15px;
+        height: 300px;
+    }
+
+    .box-1 {
+        height: 330px;
+        margin-bottom: 20px;
+    }
+
+    #about-me-box-h2 {
+        background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .train-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tside1 {
+        width: 100%;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .about-me-box {
+        padding: 10px;
+    }
+
+    .about-me-box p {
+        font-size: 15px;
+    }
+
+    #resume {
+        margin-top: 10px;
+    }
+
+    .tside2 img {
+        width: 150px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
     body {
         background-image: url(../assets/4.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        padding: 42px 400px;
+        padding: 20px 20px;
+        align-items: center;
+        justify-content: center;
     }
-} */
+
+    .about-me-box {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .about-me-box p {
+        text-align: justify;
+    }
+
+
+    #resume {
+        margin-top: 10px;
+    }
+
+    .tside2 img {
+        width: 210px;
+    }
+}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background-image: url(../assets/4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 0px 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topBar {
+        width: 100%;
+    }
+
+    .about-me-box {
+        padding: 20px 20px 22px 20px;
+        justify-content: baseline;
+        align-items: baseline;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    body {
+        background-image: url(../assets/4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 20px 150px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topBar {
+        width: 100%;
+    }
+
+    .expcard .educationcard {
+        /* padding: 50px; */
+    }
+
+    .about-me-box {
+        justify-content: center;
+    }
+
+    .about-me-box h2 {
+        /* background: linear-gradient(to left, rgb(183, 37, 40), rgb(65, 57, 235)); */
+        background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    #about-me-box-h2 {
+        background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .tside2 img {
+        position: relative;
+        margin-left: 50px;
+        width: 190px;
+    }
+}

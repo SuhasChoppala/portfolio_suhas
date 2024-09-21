@@ -47,24 +47,34 @@
     }
 }
 
+body {
+    padding: 0px 250px;
+}
+
 
 .project-card1 {
     padding: 28px 20px;
     animation: fade-in-right 1s forwards;
+    height: 250px;
 }
 
 .project-card2 {
-    padding: 28px 20px 80px 20px;
+    padding: 28px 20px;
     animation: fade-in-left 1s forwards;
+    height: 250px;
 }
 
 .project-card3 {
-    padding: 28px 20px 100px 20px;
+    padding: 28px 20px;
     animation: fade-in-right 2s forwards;
+    height: 330px;
 }
 
 .project-card4 {
+    padding: 28px 20px;
     animation: fade-in-left 2s forwards;
+    height: 330px;
+
 }
 
 .footercard2 {
@@ -78,60 +88,236 @@
     color: rgb(188, 188, 188);
 }
 
-/* @media (max-width: 1300px) {
-    body {
-        padding: 20px;
-        align-items: center;
-        justify-content: center;
-    }
+.p-a-visit {
+    color: rgb(110, 110, 110);
+    border-bottom: 1px solid rgb(110, 110, 110);
+    padding: 5px 0px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
 
-    .topBar {
-        margin-top: 0px;
-        width: 100%;
-    }
+.p-a-visit:hover {
+    transform: translateX(5px);
+    color: #007bff;
+    border-bottom: 1px solid #007bff;
+}
 
-    .side2 {
-        padding-left: 10px;
-    }
-} */
+.p-a-visit:hover .material-symbols-outlined {
+    transform: translateX(5px) rotate(45deg);
+    color: #007bff;
+}
 
-/* X-Small devices (portrait phones, less than 576px) */
-/* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) {} */
-
-/* Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) {} */
-
-/* Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) {} */
-
-/* X-Large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) {
+@media (max-width: 575px) {
     body {
-        padding: 20px;
+        /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
+        /*         background: linear-gradient(to bottom, #780206, #030a3d); */
+        /*         background: linear-gradient(to bottom, #7a2828, #00223E); */
+        background: linear-gradient(to bottom, #870000, #00223E, #010201);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
         align-items: center;
         justify-content: center;
     }
 
-    .topBar {
-        margin-top: 0px;
+    .second-row {
+        flex-direction: row-reverse;
+    }
+
+    .project-card1 {
+        height: 420px;
+    }
+
+    .project-card2 {
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .project-card3 {
+        height: 430px;
+        margin-top: 20px;
+    }
+
+    .project-card4 {
+        height: 440px;
+        margin-top: 20px;
+    }
+
+    .f-icons-sec {
+        margin-top: 5px;
         width: 100%;
     }
+}
 
-    .side2 {
-        padding-left: 10px;
+/* This is only for the Glalaxy fold mobile which has 280px  */
+@media (min-width: 279px) and (max-width: 282px) {
+    .project-card1 {
+        height: 500px;
     }
-} */
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-/* @media (min-width: 1400px) {
+    .project-card2 {
+        height: 500px;
+        margin-top: 20px;
+    }
+
+    .project-card3 {
+        height: 650px;
+        margin-top: 20px;
+    }
+
+    .project-card4 {
+        height: 650px;
+        margin-top: 20px;
+    }
+
+}
+
+@media (min-width: 283px) and (max-width: 375px) {
+    .project-card1 {
+        height: 450px;
+    }
+
+    .project-card2 {
+        height: 420px;
+        margin-top: 20px;
+    }
+
+    .project-card3 {
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .project-card4 {
+        height: 470px;
+        margin-top: 20px;
+    }
+
+}
+
+/* for tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
+        /*         background: linear-gradient(to bottom, #780206, #030a3d); */
+        /*         background: linear-gradient(to bottom, #7a2828, #00223E); */
+        background: linear-gradient(to bottom, #870000, #00223E, #010201);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-card2,
+    .project-card4 {
+        margin-top: 20px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
     body {
         background-image: url(../assets/4.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        padding: 30px 400px;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
     }
-} */
+
+    .project-card1 {
+        height: 420px;
+    }
+
+    .project-card2 {
+        height: 420px;
+    }
+
+    .project-card3 {
+        height: 440px;
+    }
+
+    .project-card4 {
+        height: 440px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background-image: url(../assets/4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 20px 20px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background-image: url(../assets/4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 20px 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topBar {
+        width: 100%;
+    }
+
+    .project-card1 {
+        height: 300px;
+    }
+
+    .project-card2 {
+        height: 300px;
+    }
+
+    .project-card3 {
+        height: 340px;
+    }
+
+    .project-card4 {
+        height: 340px;
+    }
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    body {
+        background-image: url(../assets/4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 20px 150px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topBar {
+        width: 100%;
+    }
+
+    .expcard .educationcard {
+        /* padding: 50px; */
+    }
+}
