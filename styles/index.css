@@ -338,6 +338,10 @@ body {
 }
 
 .foot-index {
+<<<<<<< HEAD
+=======
+    /* margin-top: 22px; */
+>>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
     padding: 17px 10px 7px 0px;
     animation: fade-in-up 4s forwards;
     justify-content: last baseline;
@@ -385,7 +389,10 @@ body {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575px) {
@@ -406,6 +413,7 @@ body {
         width: 100%;
     }
 
+<<<<<<< HEAD
     .scroll-text {
         display: flex;
         gap: 35px
@@ -421,6 +429,8 @@ body {
         }
     }
 
+=======
+>>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
     .second-row {
         flex-direction: column-reverse;
         margin-top: 15px;
@@ -496,10 +506,13 @@ body {
         padding: 10px;
     }
 
+<<<<<<< HEAD
     .skills-sec {
         margin-top: 10px;
     }
 
+=======
+>>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
 
 }
 
@@ -805,4 +818,8 @@ body {
     .topBar {
         width: 100%;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8

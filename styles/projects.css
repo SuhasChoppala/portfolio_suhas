@@ -88,6 +88,7 @@ body {
     color: rgb(188, 188, 188);
 }
 
+<<<<<<< HEAD
 .p-a-visit {
     color: rgb(110, 110, 110);
     border-bottom: 1px solid rgb(110, 110, 110);
@@ -105,14 +106,24 @@ body {
     transform: translateX(5px) rotate(45deg);
     color: #007bff;
 }
+=======
+
+
+>>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
 
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575px) {
     body {
+<<<<<<< HEAD
         /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
         /*         background: linear-gradient(to bottom, #780206, #030a3d); */
         /*         background: linear-gradient(to bottom, #7a2828, #00223E); */
+=======
+/*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
+/*         background: linear-gradient(to bottom, #780206, #030a3d); */
+/*         background: linear-gradient(to bottom, #7a2828, #00223E); */
+>>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
         background: linear-gradient(to bottom, #870000, #00223E, #010201);
         background-repeat: no-repeat;
         background-position: center;
@@ -127,21 +138,37 @@ body {
     }
 
     .project-card1 {
+<<<<<<< HEAD
         height: 420px;
     }
 
     .project-card2 {
         height: 400px;
+=======
+        height: 330px;
+    }
+
+    .project-card2 {
+        height: 330px;
+>>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
         margin-top: 20px;
     }
 
     .project-card3 {
+<<<<<<< HEAD
         height: 430px;
+=======
+        height: 470px;
+>>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
         margin-top: 20px;
     }
 
     .project-card4 {
+<<<<<<< HEAD
         height: 440px;
+=======
+        height: 450px;
+>>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
         margin-top: 20px;
     }
 
@@ -174,6 +201,7 @@ body {
 
 }
 
+<<<<<<< HEAD
 @media (min-width: 283px) and (max-width: 375px) {
     .project-card1 {
         height: 450px;
@@ -202,6 +230,14 @@ body {
         /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
         /*         background: linear-gradient(to bottom, #780206, #030a3d); */
         /*         background: linear-gradient(to bottom, #7a2828, #00223E); */
+=======
+/* for tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+/*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
+/*         background: linear-gradient(to bottom, #780206, #030a3d); */
+/*         background: linear-gradient(to bottom, #7a2828, #00223E); */
+>>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
         background: linear-gradient(to bottom, #870000, #00223E, #010201);
         background-repeat: no-repeat;
         background-position: center;
@@ -236,6 +272,7 @@ body {
     }
 
     .project-card1 {
+<<<<<<< HEAD
         height: 420px;
     }
 
@@ -249,6 +286,21 @@ body {
 
     .project-card4 {
         height: 440px;
+=======
+        height: 330px;
+    }
+
+    .project-card2 {
+        height: 330px;
+    }
+
+    .project-card3 {
+        height: 420px;
+    }
+
+    .project-card4 {
+        height: 420px;
+>>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
     }
 }
 
@@ -284,6 +336,7 @@ body {
     }
 
     .project-card1 {
+<<<<<<< HEAD
         height: 300px;
     }
 
@@ -297,6 +350,21 @@ body {
 
     .project-card4 {
         height: 340px;
+=======
+        height: 250px;
+    }
+
+    .project-card2 {
+        height: 250px;
+    }
+
+    .project-card3 {
+        height: 330px;
+    }
+
+    .project-card4 {
+        height: 330px;
+>>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
     }
 
 }
@@ -320,4 +388,8 @@ body {
     .expcard .educationcard {
         /* padding: 50px; */
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ee63eeeafc5b9f1f089ad6ecba7c0e7b58f938e8
