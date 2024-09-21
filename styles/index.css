@@ -348,15 +348,12 @@ body {
     font-size: 23px;
 }
 
-.skill-main {
+/* .skill-main {
     overflow: hidden;
 }
 
 .slide-skills {
     animation: scroll 20s linear infinite;
-    /* animation-name: loop; */
-    /* animation-timing-function: linear;
-    animation-iteration-count: infinite; */
     white-space: nowrap;
     display: flex;
     gap: 10px;
@@ -366,7 +363,6 @@ body {
 }
 
 .slide-skills h6 {
-    /* display: inline-block; */
     padding: 3px 15px 0px 15px;
     font-weight: 300;
     color: rgb(110, 110, 110);
@@ -375,14 +371,49 @@ body {
 @keyframes scroll {
     0% {
         transform: translateX(0%);
-        /* Start scrolling from the right edge */
     }
 
     100% {
         transform: translateX(-80.9%);
-        /* Scroll to the left edge */
+    }
+} */
+
+.skills-sec {
+    overflow: hidden;
+    /* Hide overflow */
+    white-space: nowrap;
+    /* Prevent line breaks */
+}
+
+.scroll-container {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+}
+
+.scroll-text {
+    display: flex;
+    gap: 40px;
+}
+
+.scroll-text h6 {
+    font-weight: 500;
+    color: rgb(110, 110, 110);
+}
+
+.scroll-container:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(60%);
+    }
+
+    100% {
+        transform: translateX(-100%);
     }
 }
+
 
 
 
@@ -399,6 +430,26 @@ body {
         padding: 15px 10px 10px 10px;
         align-items: center;
         justify-content: center;
+    }
+
+    .scroll-text {
+        display: flex;
+        gap: 35px;
+    }
+
+    .scroll-text h6 {
+        font-weight: 400;
+        color: rgb(110, 110, 110);
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(30%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
     }
 
     .topBar {
@@ -481,7 +532,9 @@ body {
         padding: 10px;
     }
 
-
+    .skills-sec {
+        margin-top: 10px;
+    }
 }
 
 

@@ -41,6 +41,26 @@
     }
 }
 
+.p-visit {
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: rgb(110, 110, 110);
+    border-bottom: 1px solid rgb(110, 110, 110);
+    padding: 5px 0px;
+}
+
+.p-visit:hover {
+    transform: translateX(5px);
+    color: #007bff;
+    border-bottom: 1px solid #007bff;
+}
+
+.p-visit:hover .material-symbols-outlined {
+    transform: translateX(5px) rotate(45deg);
+    color: #007bff;
+}
+
 @media (max-width: 991px) {
     .sidebar {
         background-color: rgb(23, 23, 23);
@@ -112,21 +132,21 @@ body {
     }
 
     .project-card1 {
-        height: 330px;
+        height: 420px;
     }
 
     .project-card2 {
-        height: 330px;
+        height: 420px;
         margin-top: 20px;
     }
 
     .project-card3 {
-        height: 470px;
+        height: 440px;
         margin-top: 20px;
     }
 
     .project-card4 {
-        height: 450px;
+        height: 440px;
         margin-top: 20px;
     }
 
@@ -157,6 +177,27 @@ body {
         margin-top: 20px;
     }
 
+}
+
+@media (max-width: 375px) {
+    .project-card1 {
+        height: 450px;
+    }
+
+    .project-card2 {
+        height: 430px;
+        margin-top: 20px;
+    }
+
+    .project-card3 {
+        height: 450px;
+        margin-top: 20px;
+    }
+
+    .project-card4 {
+        height: 480px;
+        margin-top: 20px;
+    }
 }
 
 /* for tablets */
@@ -199,19 +240,19 @@ body {
     }
 
     .project-card1 {
-        height: 330px;
+        height: 420px;
     }
 
     .project-card2 {
-        height: 330px;
+        height: 420px;
     }
 
     .project-card3 {
-        height: 420px;
+        height: 440px;
     }
 
     .project-card4 {
-        height: 420px;
+        height: 440px;
     }
 }
 
@@ -280,7 +321,19 @@ body {
         width: 100%;
     }
 
-    .expcard .educationcard {
-        /* padding: 50px; */
+    .project-card1 {
+        height: 300px;
+    }
+
+    .project-card2 {
+        height: 300px;
+    }
+
+    .project-card3 {
+        height: 350px;
+    }
+
+    .project-card4 {
+        height: 350px;
     }
 }
