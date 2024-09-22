@@ -64,21 +64,21 @@
     }
 }
 
-
-
-.card {
-    backdrop-filter: blur(6px) saturate(95%);
-    -webkit-backdrop-filter: blur(6px) saturate(95%);
-    background-color: rgba(64, 64, 79, 0.11);
-    border: 1px solid rgba(255, 255, 255, 0.125);
+.cardsI {
+    border-bottom-width: 1px;
+    border-color: var(--token-68c05b50-ca7b-4173-82aa-ed42aea1a9b4, #343330);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    background-color: var(--token-81ab93ff-d515-4aca-b63b-24f83b57a3ab, #DAC5A70D);
+    border-radius: 2px;
+    -webkit-font-smoothing: inherit
 }
 
 
 body {
-    background-image: url(../assets/4.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: #0e0e0e;
 }
 
 
@@ -86,20 +86,30 @@ body {
     border-bottom: 2px solid rgba(255, 255, 255, 0.125);
     width: 160px;
     line-height: 30px;
+    color: #dac5a7;
 }
 
 
 .topBar {
-
-    /* backdrop-filter: blur(6px) saturate(95%);
-    -webkit-backdrop-filter: blur(6px) saturate(95%); */
-    background-color: rgba(64, 64, 79, 0.11);
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    border-radius: 14px;
+    border-color: rgb(218 197 167 / 15%);
+    border-width: 1px;
+    backdrop-filter: blur(30px);
+    border-style: solid;
+    border-radius: 2px;
+    background-color: rgb(218 197 167 / 5%);
+    opacity: 1;
     width: 100%;
     margin-top: 30px;
-    color: rgb(188, 188, 188);
+    color: #dac5a7;
     animation: fade-in-down 1s forwards;
+}
+
+.topBar a {
+    color: #dac5a7;
+}
+
+.topBar a:hover {
+    color: #918370;
 }
 
 .infobox {
@@ -107,13 +117,14 @@ body {
 }
 
 .infobox h1 {
-    background: linear-gradient(rgb(255, 255, 255), rgb(53, 50, 50));
+    background: linear-gradient(#3a362e, #e5c8a0);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
 
 .infobox p {
     text-align: justify;
+    color: #dac5a799;
 }
 
 .infobox2 {
@@ -121,7 +132,7 @@ body {
 }
 
 .infobox2 h4 {
-    background: linear-gradient(rgb(255, 255, 255), rgb(53, 50, 50));
+    background: linear-gradient(#3a362e, #dac5a7);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     transition: all 0.4s ease;
@@ -129,6 +140,7 @@ body {
 
 .infobox2 p {
     transition: all 0.4s ease;
+    color: #dac5a799;
 }
 
 
@@ -143,14 +155,16 @@ body {
 
 
 .contact-btn {
-    color: #fff;
-    background-color: rgba(134, 122, 122, 0.2);
+    color: #0E0E0E;
+    background-color: #dac5a7;
     border: none;
+    border-radius: 2px;
 }
 
 .contact-btn:hover {
     background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 0.5px solid #dac5a7;
+    color: #dac5a7;
 }
 
 .second-row {
@@ -169,7 +183,7 @@ body {
 
 .topicons a {
     text-decoration: none;
-    color: rgb(188, 188, 188);
+    color: #dac5a7;
 }
 
 .icons {
@@ -177,13 +191,7 @@ body {
     padding: 11px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     border-radius: 5px;
-    margin-right: 18px;
-}
-
-.card {
-    background-color: rgba(255, 255, 255, 0.02);
-    color: rgb(188, 188, 188);
-    border-radius: 14px;
+    margin-right: 14px;
 }
 
 #linkedin {
@@ -203,16 +211,16 @@ body {
 }
 
 #linkedin:hover {
-    color: rgb(55, 98, 207);
+    /* color: rgb(55, 98, 207); */
     cursor: pointer;
-    border: 1px solid rgb(55, 98, 207);
+    border: 1px solid #dac5a7;
     transform: scale(1.3);
 }
 
 #github:hover {
-    color: rgb(8, 132, 8);
+    /* color: rgb(8, 132, 8); */
     cursor: pointer;
-    border: 1px solid rgb(8, 132, 8);
+    border: 1px solid #dac5a7;
     transform: scale(1.3);
 }
 
@@ -231,10 +239,12 @@ body {
 }
 
 #viewall-btn {
-    color: rgb(188, 188, 188);
-    background-color: rgba(134, 122, 122, 0.2);
+    color: #0E0E0E;
+    background-color: #dac5a7;
+    border: none;
     padding: 5px 13px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
+    border-radius: 4px;
 }
 
 #viewall-btn:hover {
@@ -246,6 +256,10 @@ body {
 .third-row {
     margin-top: 12px;
     padding: 10px;
+}
+
+.pheader-text h5 {
+    color: #dac5a7;
 }
 
 .pbutton {
@@ -260,19 +274,20 @@ body {
 .prows {
     margin-top: 14px;
     padding: 12px 10px 12px 10px;
-    border: 1px solid rgba(43, 42, 42, 0.5);
+    border: 1px solid #6e696299;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 .prows a {
     text-decoration: none;
     font-size: 17px;
-    color: rgb(188, 188, 188);
+    color: #dac5a799;
 }
 
 .picons {
-    background-color: rgba(43, 42, 42, 0.4);
+    background-color: #dac5a799;
+    color: #dac5a799;
     padding: 16px;
     border-radius: 14px;
 }
@@ -292,6 +307,7 @@ body {
 .educationicon {
     margin-right: 10px;
     font-size: 18px;
+    color: #dac5a7;
 }
 
 .eicons {
@@ -326,10 +342,20 @@ body {
 }
 
 .sliderlines {
-    /* margin: auto; */
     position: relative;
-    /* margin-top: 8px; */
     margin: auto;
+}
+
+.sliderlines .slide-line {
+    background-color: #6e696299 !important;
+    /* Set the background color */
+    border: 1px solid #6e696299 !important;
+    /* Optional: Set a light border color */
+}
+
+.sliderlines .slide-line.active {
+    background-color: #dac5a7 !important;
+    /* Change color for the active button */
 }
 
 #exp1 {
@@ -346,43 +372,12 @@ body {
 .skills-heading {
     font-weight: 400;
     font-size: 23px;
+    color: #dac5a7;
 }
-
-/* .skill-main {
-    overflow: hidden;
-}
-
-.slide-skills {
-    animation: scroll 20s linear infinite;
-    white-space: nowrap;
-    display: flex;
-    gap: 10px;
-    color: rgb(188, 188, 188);
-    vertical-align: auto;
-    padding-right: 20px;
-}
-
-.slide-skills h6 {
-    padding: 3px 15px 0px 15px;
-    font-weight: 300;
-    color: rgb(110, 110, 110);
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-80.9%);
-    }
-} */
 
 .skills-sec {
     overflow: hidden;
-    /* Hide overflow */
     white-space: nowrap;
-    /* Prevent line breaks */
 }
 
 .scroll-container {
@@ -397,7 +392,7 @@ body {
 
 .scroll-text h6 {
     font-weight: 500;
-    color: rgb(110, 110, 110);
+    color: #6e696299;
 }
 
 .scroll-container:hover {
@@ -421,12 +416,6 @@ body {
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575px) {
     body {
-        /* background: linear-gradient(to bottom, #780206, #030a3d); */
-        /* background: linear-gradient(to bottom, #7a2828, #00223E); */
-        background: linear-gradient(to bottom, #870000, #00223E, #010201);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         padding: 15px 10px 10px 10px;
         align-items: center;
         justify-content: center;
@@ -439,7 +428,7 @@ body {
 
     .scroll-text h6 {
         font-weight: 400;
-        color: rgb(110, 110, 110);
+        color: #6e696299;
     }
 
     @keyframes scroll {
@@ -495,7 +484,7 @@ body {
         width: 100%;
         display: flex;
         flex-direction: row;
-        border: 1px solid rgba(87, 80, 80, 0.2);
+        border: 0.1px solid #47444099;
     }
 
     .p-iconsec {
@@ -515,7 +504,8 @@ body {
 
     .picons {
         width: 50px;
-        background-color: rgba(87, 80, 80, 0.2);
+        /* background-color: #dac5a799; */
+        background-color: rgba(43, 42, 42, 0.4);
     }
 
     .educationcard {
@@ -563,12 +553,6 @@ body {
 /* for tablets */
 @media (min-width: 576px) and (max-width: 767px) {
     body {
-        /* background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
-        /* background: linear-gradient(to bottom, #780206, #030a3d); */
-        background: linear-gradient(to bottom, #870000, #00223E, #010201);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         padding: 10px;
         align-items: center;
         justify-content: center;
@@ -596,7 +580,7 @@ body {
     }
 
     .prows {
-        border: 1px solid rgba(87, 80, 80, 0.2);
+        border: 1px solid #dac5a799;
     }
 
     .picons {
@@ -643,10 +627,6 @@ body {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     body {
-        background-image: url(../assets/4.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         padding: 20px;
         align-items: center;
         justify-content: center;
@@ -666,16 +646,18 @@ body {
     }
 
     #viewall-btn {
-        color: rgb(188, 188, 188);
-        background-color: rgba(134, 122, 122, 0.2);
+        color: #0E0E0E;
+        background-color: #dac5a7;
+        border: none;
         padding: 2px 8px;
-        border-radius: 8px;
+        border-radius: 2px;
     }
 
     #viewall-btn:hover {
         background-color: transparent;
+        color: #dac5a7;
         padding: 2px 8px;
-        border: 0px solid rgba(255, 255, 255, 0.125);
+        border: 0.2px solid #dac5a7;
     }
 
     .pbutton {
@@ -697,7 +679,7 @@ body {
     .prows {
         margin-top: 40px;
         padding: 12px 10px 12px 10px;
-        border: 1px solid rgba(43, 42, 42, 0.5);
+        border: 1px solid #dac5a799;
         align-items: center;
         border-radius: 10px;
     }
@@ -726,10 +708,6 @@ body {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     body {
-        background-image: url(../assets/4.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         padding: 10px 20px;
         align-items: center;
         justify-content: center;
@@ -761,7 +739,7 @@ body {
     .prows {
         margin-top: 30px;
         padding: 12px 10px 12px 10px;
-        border: 1px solid rgba(43, 42, 42, 0.5);
+        border: 1px solid #dac5a799;
         align-items: center;
         border-radius: 10px;
     }
@@ -775,10 +753,7 @@ body {
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     body {
-        background-image: url(../assets/4.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        background-color: #0E0E0E;
         padding: 20px 100px;
         align-items: center;
         justify-content: center;
@@ -800,8 +775,9 @@ body {
 
     .prows {
         margin-top: 14px;
-        padding: 12px 10px 12px 10px;
-        border: 1px solid rgba(43, 42, 42, 0.5);
+        padding: 12px 10px;
+        border: 0.3px solid #343330;
+        /* Reduced border width */
         align-items: center;
         border-radius: 10px;
     }
@@ -809,7 +785,7 @@ body {
     .prows a {
         text-decoration: none;
         font-size: 17px;
-        color: rgb(188, 188, 188);
+        color: #dac5a799;
     }
 
     .picons {
@@ -822,10 +798,7 @@ body {
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
     body {
-        background-image: url(../assets/4.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        background: #0e0e0e;
         padding: 20px 150px;
         align-items: center;
         justify-content: center;

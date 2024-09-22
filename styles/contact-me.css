@@ -4,12 +4,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background: #0e0e0e;
+}
+
 .contact-card {
     padding: 26px 12px;
 }
 
 .contact-card h5 {
-    color: rgb(110, 110, 110);
+    color: #6e696299;
     font-weight: 300;
 }
 
@@ -47,12 +51,12 @@
 
 .c-icons a #linkedin-c {
     transition: all 0.4s ease;
-    color: white;
+    color: #6e696299;
 }
 
 .c-icons a #github-c {
     transition: all 0.4s ease;
-    color: white;
+    color: #6e696299;
 }
 
 .c-icons a #insta-c {
@@ -66,12 +70,12 @@
 }
 
 .c-icons a #linkedin-c:hover {
-    color: rgb(55, 98, 207);
+    color: #dac5a7;
     cursor: pointer;
 }
 
 .c-icons a #github-c:hover {
-    color: rgb(8, 132, 8);
+    color: #dac5a7;
     cursor: pointer;
 }
 
@@ -105,13 +109,6 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767px) {
     body {
-        /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
-        /*         background: linear-gradient(to bottom, #780206, #030a3d); */
-        /*         background: linear-gradient(to bottom, #7a2828, #00223E); */
-        background: linear-gradient(to bottom, #870000, #00223E, #010201);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         padding: 10px;
         align-items: center;
         justify-content: center;
@@ -166,10 +163,6 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     body {
-        background-image: url(../assets/4.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         padding: 10px 20px;
         align-items: center;
         justify-content: center;
@@ -196,10 +189,6 @@
 
 @media (min-width: 1200px) {
     body {
-        background-image: url(../assets/4.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         padding: 20px 150px;
         align-items: center;
         justify-content: center;

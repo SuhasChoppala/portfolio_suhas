@@ -84,11 +84,7 @@
 }
 
 body {
-    background-image: url(../assets/4.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    background: #0e0e0e;
 }
 
 .box-1 {
@@ -102,26 +98,26 @@ body {
 }
 
 .about-me-box h2 {
-    background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: #dac5a7;
 }
 
 #about-me-box-h2 {
-    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(77, 77, 77));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: #dac5a7;
 }
 
 .about-me-box p {
     text-align: justify;
+    color: #6e696299;
 }
 
 .name {
-    background: linear-gradient(rgb(255, 255, 255), rgb(82, 80, 80));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: #dac5a7;
 }
+
+.aicons {
+    color: #dac5a7;
+}
+
 
 #resume {
     margin-top: 20px;
@@ -129,17 +125,18 @@ body {
 
 #resume a {
     text-decoration: none;
-    color: rgb(19, 0, 0);
+    color: #0E0E0E;
+    background-color: #dac5a7;
+    border: none;
     padding: 10px 13px;
-    border-radius: 14px;
-    background-color: rgb(188, 188, 188);
+    border-radius: 4px;
 }
 
 #resume a:hover {
     transform: scale(1.8);
-    color: rgb(188, 188, 188);
     background-color: transparent;
-    border: 1px solid rgba(188, 188, 188, 0.65)
+    border: 0.5px solid #dac5a7;
+    color: #dac5a7;
 }
 
 #resume a:hover .resume-icon {
@@ -266,18 +263,18 @@ body {
 }
 
 #fbtn {
-    color: rgb(188, 188, 188);
-    text-decoration: none;
-    background-color: rgba(43, 42, 42, 0.7);
+    color: #0E0E0E;
+    background-color: #dac5a7;
+    border: none;
     padding: 5px 13px;
-    border-radius: 8px;
-    transition: all 0.4s ease;
+    border-radius: 4px;
+    text-decoration: none;
 }
 
 #fbtn:hover {
-    transform: scale(1.8);
-    background-color: rgb(188, 188, 188);
-    color: rgba(43, 42, 42, 0.7);
+    background-color: transparent;
+    border: 0.5px solid #dac5a7;
+    color: #dac5a7;
 }
 
 .fgicon {
@@ -293,16 +290,10 @@ body {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575px) {
-    body {
-        /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
-        /*         background: linear-gradient(to bottom, #780206, #030a3d); */
-        /*         background: linear-gradient(to bottom, #7a2828, #00223E); */
-        background: linear-gradient(to bottom, #870000, #00223E, #010201);
-    }
-
     .second-row {
         flex-direction: row-reverse;
     }
+
 
     .about-me-box {
         margin-top: 20px;
@@ -356,13 +347,6 @@ body {
 /* for tablets */
 @media (min-width: 576px) and (max-width: 767px) {
     body {
-        /*         background: linear-gradient(to bottom, rgb(51, 9, 11), rgb(0, 0, 0)); */
-        /*         background: linear-gradient(to bottom, #780206, #030a3d); */
-        /*         background: linear-gradient(to bottom, #7a2828, #00223E); */
-        background: linear-gradient(to bottom, #870000, #00223E, #010201);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         padding: 10px;
         align-items: center;
         justify-content: center;
@@ -381,12 +365,6 @@ body {
     .box-1 {
         height: 330px;
         margin-bottom: 20px;
-    }
-
-    #about-me-box-h2 {
-        background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
     }
 
     .train-cards {
@@ -423,10 +401,6 @@ body {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     body {
-        background-image: url(../assets/4.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         padding: 20px 20px;
         align-items: center;
         justify-content: center;
@@ -455,10 +429,6 @@ body {
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     body {
-        background-image: url(../assets/4.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         padding: 0px 100px;
         align-items: center;
         justify-content: center;
@@ -478,10 +448,6 @@ body {
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
     body {
-        background-image: url(../assets/4.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         padding: 20px 150px;
         align-items: center;
         justify-content: center;
@@ -491,25 +457,9 @@ body {
         width: 100%;
     }
 
-    .expcard .educationcard {
-        /* padding: 50px; */
-    }
 
     .about-me-box {
         justify-content: center;
-    }
-
-    .about-me-box h2 {
-        /* background: linear-gradient(to left, rgb(183, 37, 40), rgb(65, 57, 235)); */
-        background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    }
-
-    #about-me-box-h2 {
-        background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
     }
 
     .tside2 img {
