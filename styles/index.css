@@ -530,12 +530,16 @@ body {
     .educationcard {
         margin-top: 20px;
         padding: 10px;
+        padding-top: 18px;
+        padding-bottom: 0px
     }
 
     .expcard {
         margin-top: 20px;
         padding: 10px;
-        height: 340px;
+        padding-top: 18px;
+        height: 350px;
+        /* padding-bottom: 50px; */
     }
 
     .skills-row {
@@ -703,7 +707,9 @@ body {
         margin-top: 30px;
         padding: 12px 10px 12px 10px;
         align-items: center;
-        border-radius: 10px;
+        border-radius: 4px;
+        border: 1px solid #6e696299;
+
     }
 
     .educationcard {
@@ -771,9 +777,9 @@ body {
     .prows {
         margin-top: 24px;
         padding: 12px 10px 12px 10px;
-        border: 1px solid #dac5a799;
+        border: 1px solid #6e696299;
         align-items: center;
-        border-radius: 10px;
+        border-radius: 4px;
     }
 
     .pbutton {
@@ -813,9 +819,8 @@ body {
         margin-top: 14px;
         padding: 12px 10px;
         border: 0.3px solid #343330;
-        /* Reduced border width */
         align-items: center;
-        border-radius: 10px;
+        border-radius: 4px;
     }
 
     .prows a {
