@@ -495,6 +495,8 @@ body {
         margin-right: 0px;
         position: relative;
         margin-right: -8px;
+        padding: 2px 8px;
+        border-radius: 2px;
     }
 
     .prows {
@@ -533,6 +535,7 @@ body {
     .expcard {
         margin-top: 20px;
         padding: 10px;
+        height: 340px;
     }
 
     .skills-row {
@@ -541,6 +544,10 @@ body {
 
     .skills-sec {
         margin-top: 10px;
+    }
+
+    .sliderlines {
+        margin-top: 18px;
     }
 }
 
@@ -690,13 +697,11 @@ body {
     .prows a {
         text-decoration: none;
         font-size: 14px;
-        color: rgb(188, 188, 188);
     }
 
     .prows {
-        margin-top: 40px;
+        margin-top: 30px;
         padding: 12px 10px 12px 10px;
-        border: 1px solid #dac5a799;
         align-items: center;
         border-radius: 10px;
     }
@@ -719,6 +724,16 @@ body {
         background-color: black;
     }
 
+    .skills-row {
+        padding: 0px 10px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    .sliderlines {
+        margin-top: 100px;
+    }
 }
 
 
@@ -754,7 +769,7 @@ body {
     }
 
     .prows {
-        margin-top: 30px;
+        margin-top: 24px;
         padding: 12px 10px 12px 10px;
         border: 1px solid #dac5a799;
         align-items: center;
@@ -763,6 +778,10 @@ body {
 
     .pbutton {
         text-align: right;
+    }
+
+    .sliderlines {
+        margin-top: 10px;
     }
 
 }
