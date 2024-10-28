@@ -442,6 +442,27 @@ body {
         color: #2c2c2c;
     }
 
+    .p-heading {
+        animation: fade-in-right 1s ease-in-out forwards;
+    }
+
+    /* .topicons {
+        animation: fade-in-right 1s ease-in-out forwards;
+    } */
+
+    @keyframes fade-in-right {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+
+    }
+
     @keyframes scroll {
         0% {
             transform: translateX(30%);
@@ -454,7 +475,7 @@ body {
 
     /* Animation for edcards */
 
-    @keyframes slideInFromRight {
+    /* @keyframes slideInFromRight {
         0% {
             transform: translateX(100%);
             opacity: 0;
@@ -481,10 +502,10 @@ body {
     .cardsI {
         padding: 20px;
         overflow: hidden;
-    }
+    } */
 
     /* Animation styles for prows */
-    .prows {
+    /* .prows {
         opacity: 0;
         transform: translateY(20px);
         transition: opacity 0.5s ease-out, transform 0.5s ease-out;
@@ -493,7 +514,43 @@ body {
     .prows.visible {
         opacity: 1;
         transform: translateY(0);
+    } */
+
+    /* trails */
+
+    /* @keyframes fade-in-left {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(-50px);
+        }
+    } */
+
+    .reveal {
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1s ease;
     }
+
+    .reveal.active {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .reveal-fade {
+        opacity: 0;
+        transition: all 1s ease-out;
+    }
+
+    .reveal-fade.active-fade {
+        opacity: 1;
+    }
+
+    /* trails */
 
 
     .topBar {

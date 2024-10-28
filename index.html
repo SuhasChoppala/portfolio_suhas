@@ -95,7 +95,7 @@
                         <a href="./views/projects.html" style="text-decoration: none;" id="viewall-btn">View all</a>
                     </div>
                 </div>
-                <div class="row prows">
+                <div class="row prows reveal">
                     <div class="col-sm-3 p-iconsec">
                         <i class="fa-solid fa-layer-group picons"></i>
                     </div>
@@ -103,7 +103,7 @@
                         <a href="./views/projects.html">CRM - Customer Relation Management</a>
                     </div>
                 </div>
-                <div class="row prows">
+                <div class="row prows reveal">
                     <div class="col-sm-3 p-iconsec">
                         <i class="fa-solid fa-layer-group picons"></i>
                     </div>
@@ -111,7 +111,7 @@
                         <a href="https://my-task-trackr.vercel.app/" target="_blank">To do App</a>
                     </div>
                 </div>
-                <div class="row prows">
+                <div class="row prows reveal">
                     <div class="col-sm-3 p-iconsec">
                         <i class="fa-solid fa-layer-group picons"></i>
                     </div>
@@ -119,7 +119,7 @@
                         <a href="https://kona-digital.vercel.app/" target="_blank">KonaAi Website [Client Project]</a>
                     </div>
                 </div>
-                <div class="row prows">
+                <div class="row prows reveal">
                     <div class="col-sm-3 p-iconsec">
                         <i class="fa-solid fa-layer-group picons"></i>
                     </div>
@@ -134,15 +134,17 @@
                 <div class="col-sm educ-card">
                     <div class="cardsI educationcard">
                         <h5 style="font-weight: 400; color: #2c2c2c;"> <span><i
-                                    class="fa-solid fa-graduation-cap educationicon"></i></span>Education</h5>
+                                    class="fa-solid fa-graduation-cap educationicon"></i></span>Education
+                        </h5>
                         <div class="edcards">
                             <div class="row edrows">
                                 <div class="col-sm-1">
-                                    <i class="fa-solid fa-graduation-cap eicons" style="color: #2c2c2c;"></i>
+                                    <i class="fa-solid fa-graduation-cap eicons reveal" style="color: #2c2c2c;"></i>
                                 </div>
                                 <div class="col-sm-11">
-                                    <h6 class="enames" style="color: #2c2c2c;">Bachelor of Technology</h6>
-                                    <p style="color: #2c2c2c;">Indian Institute of Technology Tirupati • 2023
+                                    <h6 class="enames reveal" style="color: #2c2c2c;">Bachelor of Technology</h6>
+                                    <p style="color: #2c2c2c;" class="reveal">Indian Institute of Technology
+                                        Tirupati • 2023
                                     </p>
                                 </div>
                             </div>
@@ -150,22 +152,23 @@
                         <div class="edcards">
                             <div class="row edrows">
                                 <div class="col-sm-1">
-                                    <i class="fa-solid fa-graduation-cap eicons" style="color: #2c2c2c;"></i>
+                                    <i class="fa-solid fa-graduation-cap eicons reveal" style="color: #2c2c2c;"></i>
                                 </div>
                                 <div class="col-sm-11">
-                                    <h6 class="enames" style="color: #2c2c2c;">Senior Secondary Education</h6>
-                                    <p style="color: #2c2c2c;">Sree Kasyap Junior College • 2019</p>
+                                    <h6 class="enames reveal" style="color: #2c2c2c;">Senior Secondary Education
+                                    </h6>
+                                    <p style="color: #2c2c2c;" class="reveal">Sree Kasyap Junior College • 2019</p>
                                 </div>
                             </div>
                         </div>
                         <div class="edcards">
                             <div class="row edrows">
                                 <div class="col-sm-1">
-                                    <i class="fa-solid fa-graduation-cap eicons" style="color: #2c2c2c;"></i>
+                                    <i class="fa-solid fa-graduation-cap eicons reveal" style="color: #2c2c2c;"></i>
                                 </div>
                                 <div class="col-sm-11">
-                                    <h6 class="enames" style="color: #2c2c2c;">Secondary Education</h6>
-                                    <p style="color: #2c2c2c;">Sri Chaitanya EM School • 2017</p>
+                                    <h6 class="enames reveal" style="color: #2c2c2c;">Secondary Education</h6>
+                                    <p style="color: #2c2c2c;" class="reveal">Sri Chaitanya EM School • 2017</p>
                                 </div>
                             </div>
                         </div>
@@ -271,46 +274,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/b927c8d3d7.js" crossorigin="anonymous"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const prows = document.querySelectorAll('.prows');
+        window.addEventListener('scroll', reveal);
+        function reveal() {
 
-            const revealOnScroll = () => {
-                const windowHeight = window.innerHeight;
-                const scrollY = window.scrollY;
-
-                prows.forEach(prow => {
-                    const prowTop = prow.getBoundingClientRect().top + scrollY;
-                    if (scrollY + windowHeight > prowTop + 50) {
-                        prow.classList.add('visible');
-                    }
-                });
-            };
-
-            window.addEventListener('scroll', revealOnScroll);
-            revealOnScroll();
-        });
-    </script>
-    <script>
-
-        document.addEventListener("DOMContentLoaded", function () {
-            const cards = document.querySelectorAll('.edcards');
-
-            const revealCards = () => {
-                const windowHeight = window.innerHeight;
-
-                cards.forEach(card => {
-                    const cardTop = card.getBoundingClientRect().top;
-                    const isVisible = cardTop < windowHeight - 50;
-
-                    if (isVisible) {
-                        card.classList.add('reveal');
-                    }
-                });
-            };
-
-            window.addEventListener('scroll', revealCards);
-        });
-
+            var reveals = document.querySelectorAll('.reveal')
+            for (var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 20;
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
     </script>
 
 </body>
