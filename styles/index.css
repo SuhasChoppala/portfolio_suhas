@@ -452,6 +452,36 @@ body {
         }
     }
 
+    /* Add this CSS to your stylesheet */
+
+    @keyframes slideInFromRight {
+        0% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .edcards {
+        opacity: 0;
+        /* Initially hidden */
+        animation-duration: 0.7s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        /* Keep the final state */
+    }
+
+    .edcards.reveal {
+        opacity: 1;
+        animation-name: slideInFromRight;
+        /* Apply the animation */
+    }
+
+
     .topBar {
         margin-top: 0px;
         width: 100%;
