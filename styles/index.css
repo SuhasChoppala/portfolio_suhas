@@ -452,7 +452,7 @@ body {
         }
     }
 
-    /* Add this CSS to your stylesheet */
+    /* Animation for edcards */
 
     @keyframes slideInFromRight {
         0% {
@@ -468,17 +468,32 @@ body {
 
     .edcards {
         opacity: 0;
-        /* Initially hidden */
-        animation-duration: 0.7s;
+        animation-duration: 0.6s;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in-out;
-        /* Keep the final state */
     }
 
     .edcards.reveal {
         opacity: 1;
         animation-name: slideInFromRight;
-        /* Apply the animation */
+    }
+
+    .cardsI {
+        padding: 20px;
+        background: #f9f9f9;
+        overflow: hidden;
+    }
+
+    /* Animation styles for prows */
+    .prows {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
+    .prows.visible {
+        opacity: 1;
+        transform: translateY(0);
     }
 
 
